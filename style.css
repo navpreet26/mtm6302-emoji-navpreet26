@@ -1,0 +1,43 @@
+/*CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(116, 238, 199);
+}
+
+.emoji-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(27, 159, 71);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(9, 175, 128);
+}
+
+.emoji-item{
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(155, 208, 9) ;
+    border: 1px salmon;
+    border-radius: 8px;
+}
+
+.emoji-item span{
+    font: size 2rem;
+}
+
+.emoji-item code{
+    display: block;
+    margin-top: 5px;
+    color: rgb(121, 17, 149);
+}
